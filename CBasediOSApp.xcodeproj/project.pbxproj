@@ -13,6 +13,7 @@
 		23728E9B154622C600ED5A71 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 23728E9A154622C600ED5A71 /* main.c */; };
 		23728E9F154622C600ED5A71 /* AppDelegate.c in Sources */ = {isa = PBXBuildFile; fileRef = 23728E9E154622C600ED5A71 /* AppDelegate.c */; };
 		23728EA71546269400ED5A71 /* View.c in Sources */ = {isa = PBXBuildFile; fileRef = 23728EA61546269400ED5A71 /* View.c */; };
+		62B01A6D232F48EA00BE9C77 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B01A6C232F48EA00BE9C77 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		23728E9A154622C600ED5A71 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		23728E9E154622C600ED5A71 /* AppDelegate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AppDelegate.c; sourceTree = "<group>"; };
 		23728EA61546269400ED5A71 /* View.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = View.c; sourceTree = "<group>"; };
+		62B01A6C232F48EA00BE9C77 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				23728E9E154622C600ED5A71 /* AppDelegate.c */,
 				23728EA61546269400ED5A71 /* View.c */,
 				23728E95154622C600ED5A71 /* Supporting Files */,
+				62B01A6C232F48EA00BE9C77 /* Launch Screen.storyboard */,
 			);
 			path = CBasediOSApp;
 			sourceTree = "<group>";
@@ -114,12 +117,18 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Ultimate Computer Services, Inc.";
+				TargetAttributes = {
+					23728E89154622C600ED5A71 = {
+						DevelopmentTeam = UW9ALQMXSK;
+					};
+				};
 			};
 			buildConfigurationList = 23728E84154622C500ED5A71 /* Build configuration list for PBXProject "CBasediOSApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 23728E7F154622C500ED5A71;
@@ -137,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62B01A6D232F48EA00BE9C77 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,11 +214,15 @@
 		23728EA3154622C600ED5A71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEVELOPMENT_TEAM = UW9ALQMXSK;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = "";
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				INFOPLIST_FILE = "CBasediOSApp/CBasediOSApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prateekgrover.cbasediosapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -217,11 +231,15 @@
 		23728EA4154622C600ED5A71 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEVELOPMENT_TEAM = UW9ALQMXSK;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = "";
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				INFOPLIST_FILE = "CBasediOSApp/CBasediOSApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prateekgrover.cbasediosapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

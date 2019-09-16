@@ -35,7 +35,7 @@ void View_drawRect(id self, SEL _cmd, CGRect rect)
     CGContextSetFillColor(context, (CGFloat []){ 1, 1, 1, 1 });
     
     // here, we simply add and draw the rect to the screen
-    CGContextAddRect(context, (struct CGRect) { 0, 0, 320, 480 });
+    CGContextAddRect(context, (struct CGRect) { 0, 0, 640, 1136 });
     CGContextFillPath(context);
     
     // and we now set the drawing color to red, then add another rectangle
